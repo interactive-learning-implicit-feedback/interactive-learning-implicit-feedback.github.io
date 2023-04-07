@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Workshop on Interactive Learning with Implicit Human Feedback</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Custom styles for this template -->
+
+
+	<link href="../css/scrolling-nav.css" rel="stylesheet">
+	<link href="../css/style.css" rel="author stylesheet">
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0M445FTS98"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0M445FTS98');
+</script>
+    </head>
+
+    <body id="page-top">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+	    <div class="container bar-container">
+		<a class="title-head" href="#page-top">Interactive Learning with Implicit Human Feedback</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+		    <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+				</li>
+
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+				</li>
+
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+				</li>
+
+ 				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#callpapers"> Call for papers </a>
+				</li>
+
+<!--				<li class="nav-item">-->
+<!--				    <a class="nav-link js-scroll-trigger" href="#papers"> Papers </a>-->
+<!--				</li>-->
+
+				<!-- <li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+				</li> -->
+				<li class="nav-item">
+				    <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+				</li>
+		    </ul>
+		</div>
+	    </div>
+	</nav>
+
+	<header class="headercontainer bg-primary text-white" style="padding: 0%; max-height: none; ">
+	    <div style="background-color: rgba(160,160,160,0.0)" class="text-center">
+		<div style="padding-bottom: 6%; padding-top: 6%; background-image: url('../images/nz.png'); background-size: cover; background-position: center">
+
+	    <div class="container titlebox"; style="display: inline-block; background-color:rgba(0,0,0, 0.7); width:auto;">
+		<p style="text-align: center; margin-bottom: 2" class="title">Interactive Learning with Implicit Human Feedback</p>
+		<p style="text-align: center; margin-bottom: 0" class="subtitle">Workshop ICML 2023 - July 28th </p>
+		<p style="text-align: center; margin-bottom: 0" class="subtitle">Location: TBD</p>
+		 <p style="text-align: center; margin-bottom: 0" class="subtitle">Poster session: TBD</p>
+<!--		 <p style="text-align: center; margin-bottom: 0" class="subtitle">Submit your questions in the <a href="https://pheedloop.com/CoRL2022/virtual/?page=channels&section=SES29VV7IMN12XXOW">Pheedloop chat</a></p>-->
+
+		</div>
+	    </div>
+	    </div>
+	</header>
+
+	    <hr class="half-rule"/>
+	<section id="about">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+			<span class=titlesec>About</span>
+			<br>
+			<span>
+				Systems that can learn interactively from their end-users are quickly becoming widespread in real-world applications.
+				Typically humans provide tagged rewards or scalar feedback for such interactive learning systems.
+				However, humans offer a wealth of implicit information (such as multimodal cues in the form of natural language, speech, eye movements, facial expressions, gestures etc.) which interactive learning algorithms can leverage during the process of human-machine interaction to create a grounding for human intent, and thereby better assist end-users.
+				A closed-loop sequential decision-making domain offers unique challenges when learning from humans -– (1) the data distribution may be influenced by the choices of the algorithm itself, and thus interactive ML algorithms need to adaptively learn from human feedback, (2) the nature of the environment itself changes rapidly, (3) humans may express their intent in various forms of feedback amenable to naturalistic real-world settings, going beyond tagged rewards or demonstrations.
+
+				By organizing this workshop, we attempt to bring together interdisciplinary experts in interactive machine learning, reinforcement learning, human-computer interaction, cognitive science, and robotics to explore and foster discussions on such challenges.
+				We envision that this exchange of ideas within and across disciplines can build new bridges, address some of the most valuable challenges in interactive learning with implicit human feedback, and also provide guidance to young researchers interested in growing their careers in this space.
+				</span>
+
+		    </div>
+		    <div class="col-md-7 mx-auto" style="text-align: center;">
+			<br>
+
+
+		    </div>
+		</div>
+
+	    </div>
+
+
+
+	</section>
+
+
+
+
+
+	<hr class="half-rule"/>
+	
+	<section id="speakers">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+		<span class=titlesec> Speakers and Panelists</span><br>
+		<div class="row">
+			
+			<a href='https://david-abel.github.io/'>
+		    <div class="profpic speaker xlarge-1 columns">
+			    <img src="../images/speakers/profile_abel.jpeg" class="figure-img img-fluid ">
+			<p class=profname><a href="https://david-abel.github.io/"> David Abel </a> </p>
+			<p class=institution> DeepMind </p>
+		    </div>
+			</a>
+
+			<a href='https://www.cs.utah.edu/~dsbrown/'>
+		    <div class="profpic speaker xlarge-1 columns">
+			    <img  src="../images/speakers/profile_brown.jpeg" class="figure-img img-fluid ">
+			<p class=profname><a href="https://www.cs.utah.edu/~dsbrown/">  Daniel Brown
+			</a></p>
+			<p class=institution> University of Utah </p>
+		    </div>
+
+			</a>
+			<a href="https://jgrizou.com/">
+		    <div class="profpic speaker xlarge-1 columns">
+			    <img  src='../images/speakers/profile_grizou.jpeg' class="figure-img img-fluid ">
+			<p class=profname><a href="https://jgrizou.com/"> Jonathan Grizou
+			</a></p>
+			<p class=institution> University of Glasgow</p>
+
+		    </div>
+			</a>
+
+			</a>
+			<a href="https://www.taylorkesslerfaulkner.com/">
+		    <div class="profpic speaker xlarge-1 columns">
+			    <img  src='../images/speakers/profile_kesslerfaulkner.jpeg' class="figure-img img-fluid ">
+			<p class=profname><a href="https://www.taylorkesslerfaulkner.com/"> Taylor Kessler Faulkner
+			</a></p>
+			<p class=institution>University of Washington</p>
+
+		    </div>
+			</a>
+		</div>
+		<div class="row">
+
+			<a href="https://jan.leike.name/">
+		   <div class="profpic speaker xlarge-1 columns">
+			    <img  src="../images/speakers/profile_leike.jpeg" class="figure-img img-fluid ">
+			<p class=profname> <a href="https://jan.leike.name/"> Jan Leike </a></p>
+			<p class=institution>  OpenAI </p>
+
+		    </div>
+			</a>
+
+			<a href='https://www.microsoft.com/en-us/research/people/pmineiro/'>
+		    <div class="profpic speaker xlarge-1 columns">
+			    <img  src='../images/speakers/profile_mineiro.jpeg' class="figure-img img-fluid ">
+			<p class="profname"> <a href="https://www.microsoft.com/en-us/research/people/pmineiro/">Paul Mineiro</a></p>
+			<p class=institution>Microsoft Research</p>
+		    </div>
+			</a>
+
+			<a href="https://dorsa.fyi/">
+		   <div class="profpic speaker xlarge-1 columns">
+			    <img  src="../images/speakers/profile_sadigh.jpeg" class="figure-img img-fluid ">
+			<p class=profname> <a href="https://dorsa.fyi/"> Dorsa Sadigh </a></p>
+			<p class=institution>  Stanford University </p>
+
+		    </div>
+			</a>
+			
+
+
+
+
+		</div>
+
+
+		</div>
+</div>
+
+</section>
+
+	<hr class="half-rule"/>
+	<section class="">
+	    <div class="container" id="schedule">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+			<span class="titlesec"><span></span>Schedule</span>
+			<br><br>
+			<table class="table table-striped">
+				<tbody>
+				<tr>
+					<th style="width: 21%"> Time (GMT-10)</th>
+				</tr>
+				<tr>
+					<td style="width: 21%">	09:00 am - 09:10 am        <td/><td>  Organizers <br> <b> Introductory Remarks  </b> </td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	09:10 am - 10:30 am        <td/><td>    Invited Speakers 1-4 <br> <b> TBD </b></td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	10:30 am - 11:00 am        <td/><td>    Contributed Talks </td>
+				</tr>
+
+				
+				<tr>
+					<td style="width: 21%">	11:00 am - 01:00 pm        <td/><td>  Lunch/virtual social event </td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	01:00 pm - 02:30 pm        <td/><td>    Invited Speakers 5-8 <br> <b> TBD </b></td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	02:30 pm - 03:00 pm        <td/><td>    Contributed Talks </td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">
+						03:00 pm - 04:00 pm       <td/><td> Location: TBD <br>  <b>  Poster Session </b>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	04:00 pm - 05:20 pm      <td/><td>
+						<b> Panel Session</b>
+					<div id="abstractkiley" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false"> </td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">
+						05:20 pm - 05:30 pm    <td/><td>   Organizers <br>  <b>    Concluding Remarks </b>
+					</td>
+				</tr>
+				
+
+				</tbody>
+
+			</table>
+		    </div>
+		</div>
+	    </div>
+	</section>
+
+
+
+	<br>
+	<hr class="half-rule"/>
+<section id="callpapers">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+		<span class=titlesec>Call for papers</span><br>
+<!--			   To be announced.-->
+				<span style="color:red">New: </span> The call for papers is now open.
+			<br><br>
+			<h5 style="font-weight: bold"> Areas of interest </h5>
+			We solicit submissions related to (but not limited to) the following themes on interaction-grounded machine learning with humans:
+
+			<br><br>
+			<ol>
+				<li style="padding-bottom: 10px"> Leveraging different types of human input modalities for interactive learning</li>
+				<li style="padding-bottom: 10px"> Models and representations learned from human data</li>
+				<li style="padding-bottom: 10px"> Online learning algorithms for human-machine collaboration</li>
+				<li style="padding-bottom: 10px"> Personalized interaction-based learning</li>
+				<li style="padding-bottom: 10px"> Theoretical advances for interactive learning with implicit human feedback</li>
+				<li style="padding-bottom: 10px"> Interactive Learning with non-stationary rewards and environment dynamics</li>
+				<li style="padding-bottom: 10px"> Applications for HCI and accessibility</li>
+				<li style="padding-bottom: 10px"> Understanding how humans teach other humans and learning agents/embodied robots</li>
+
+			</ol>
+				All submissions will be managed through <a href="https://openreview.net/forum?id=M09SuvHJW2r">OpenReview</a>.
+				The review process is double-blind so the submission should be anonymized.
+				Papers should be a maximum of 8 pages (excluding references), and <a href="https://media.icml.cc/Conferences/ICML2023/Styles/icml2023.zip">formatted in ICML style</a>.
+				Accepted papers will be presented as posters during the workshop and select works will be invited to give spotlight talks during the workshop.
+				Accepted papers will be made available online on the workshop website as non-archival reports, allowing submissions to future conferences or journals.
+			<br><br>
+				Authors may optionally add appendices in their submitted paper.
+				Supplementary Materials uploads are to only be used optionally for extra videos/code/data/figures and should be uploaded separately in the submission website.
+			<br><br>
+
+				Submissions will be evaluated based on novelty, rigor, and relevance to theme of the workshop. Both empirical and theoretical contributions are welcome.
+				All participants must adhere to the ICML Code of Conduct.
+
+						    <br><br>
+			<h5 style="font-weight: bold"> Important Dates </h5>
+			<ul>
+
+
+			<li style="display: list-item">
+				<b>Submission deadline:</b> May 31, 2023, AoE.
+			</li>
+			<li style="display: list-item">
+				<b>Author Notifications:</b> June 25, 2023, AoE.
+
+
+			</li>
+				<li style="display: list-item">
+					<b>Camera Ready:</b> July 10, 2023, AoE.
+
+			</li>
+					<li style="display: list-item">
+					<b>Workshop:</b> July 28/July 29, 2023.
+
+			</li>
+			</ul>
+	    </div>
+		</div>
+			</div>
+		    </div>
+		</div>
+	</section>
+
+
+<!--	<hr class="half-rule"/>-->
+<!--	<section id="papers">-->
+
+
+
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--			    <div class="col-md-10 mx-auto">-->
+<!--					<span class=titlesec>Papers</span><br>-->
+
+<!--					<p>Congratulations to Abhijat Biswas (Mitigating causal confusion in driving agents via gaze supervision)-->
+<!--					and Ruohan Zhang (A Dual Representation Framework for Robot Learning with Human Guidance) for each winning a Best Paper Award!</p>-->
+
+<!--					<ul class="listpapers">-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #8 - <span>&ndash;&gt;-->
+<!--								Mitigating causal confusion in driving agents via gaze supervision-->
+<!--								<a class="linkpaper" href="./docs/camready_8.pdf"> [link]</a>-->
+<!--								<span style="color: #ff8c00">(spotlight)</span>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Abhijat Biswas; Badal Arun Pardhi; Caleb Chuck; Jarrett Holtz; Scott Niekum; Henny Admoni; Alessandro Allievi-->
+<!--						</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							 <span class="postername">Poster #1 - <span>&ndash;&gt;-->
+<!--							Learning Zero-Shot Cooperation with Humans, Assuming Humans Are Biased-->
+<!--								 <a class="linkpaper" href="./docs/camready_1.pdf"> [link]</a> <br>-->
+<!--							<span class="authorname">-->
+<!--							Chao Yu; Jiaxuan Gao; Weilin Liu; Botian Xu; Hao Tang; Jiaqi Yang; Yu Wang; Yi Wu-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							 <span class="postername"> Poster #3 - <span>&ndash;&gt;-->
+<!--								 Spatial Generalization of Visual Imitation Learning with Position-Invariant Regularization-->
+<!--								 <a class="linkpaper" href="./docs/camready_3.pdf"> [link]</a>-->
+<!--								<br> <span class="authorname"> Zhao-Heng Yin; Yang Gao; Qifeng Chen </span>-->
+<!--						</li>-->
+
+
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #5 - <span>&ndash;&gt;-->
+<!--							Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training-->
+<!--								<a class="linkpaper" href="./docs/camready_5.pdf"> [link]</a> <br>-->
+<!--							<span class="authorname">-->
+<!--							Yecheng Ma; Shagun Sodhani; Dinesh Jayaraman; Osbert Bastani; Vikash Kumar; Amy Zhang-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #6 - <span>&ndash;&gt;-->
+
+<!--							Do you see what I see? Using questions and answers to align representations of robotic actions-->
+<!--							 <a class="linkpaper" href="./docs/camready_6.pdf"> [link]</a>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Chad DeChant; Iretiayo Akinola; Daniel Bauer-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #11 - <span>&ndash;&gt;-->
+
+<!--							 A Sequential Group VAE for Robot Learning of Haptic Representations-->
+<!--								<a class="linkpaper" href="./docs/camready_11.pdf"> [link]</a>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Ben Richardson; Katherine J. Kuchenbecker; Georg Martius-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #7 - <span>&ndash;&gt;-->
+
+<!--							A Dual Representation Framework for Robot Learning with Human Guidance-->
+<!--							 <a class="linkpaper" href="./docs/camready_7.pdf"> [link]</a>-->
+<!--								<span style="color: #ff8c00">(spotlight)</span>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Ruohan Zhang; Dhruva Bansal; Yilun Hao; Ayano Hiranaka; Jialu Gao; Chen Wang; Roberto Martín-Martín; Li Fei-Fei; Jiajun Wu-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #9 - <span>&ndash;&gt;-->
+<!--						Learning Abstract Representations of Agent-Environment Interactions-->
+<!--								<a class="linkpaper" href="./docs/camready_9.pdf"> [link]</a>-->
+<!--						 <br>-->
+<!--							<span class="authorname">-->
+<!--								Tanmay Shankar; Jean Oh </span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #10 - <span>&ndash;&gt;-->
+
+<!--							Learning Visualization Policies of Augmented Reality for Human-Robot Collaboration-->
+<!--							  <a class="linkpaper" href="./docs/camready_10.pdf"> [link]</a>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Kishan Chandan; Jack Albertson; Shiqi Zhang-->
+<!--							</span>-->
+<!--						</li>-->
+
+
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #12 - <span>&ndash;&gt;-->
+
+<!--							A Graph Neural Network Approach for Choosing Robot Addressees in Group Human-Robot Interactions-->
+<!--							  <a class="linkpaper" href="./docs/camready_12.pdf"> [link]</a>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Sarah Gillet; Iolanda Leite; Marynel Vázquez-->
+<!--							</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername">Poster #4 - <span>&ndash;&gt;-->
+<!--							Graph Inverse Reinforcement Learning from Diverse Videos-->
+<!--								<a class="linkpaper" href="./docs/camready_4.pdf"> [link]</a> <br>-->
+<!--							<span class="authorname">-->
+<!--								Sateesh Kumar; Jonathan Zamora; Nicklas A Hansen; Rishabh Jangir; Xiaolong Wang</span>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--&lt;!&ndash;							<span class="postername"> Poster #2 - <span>&ndash;&gt;-->
+
+<!--							Watch and Match: Supercharging Imitation with Regularized Optimal Transport-->
+<!--							<a class="linkpaper" href="./docs/camready_2.pdf"> [link]</a>-->
+<!--							<br>-->
+<!--							<span class="authorname">-->
+<!--							Siddhant Haldar; Vaibhav Mathur; Denis Yarats; Lerrel Pinto-->
+<!--						</span>-->
+<!--						</li>-->
+<!--					</ul>-->
+
+
+
+
+
+<!--					<br><br>-->
+
+
+
+<!--					<h5 style="font-weight: bold"> Reviewers </h5>-->
+<!--					We thank the following people for their assistance in reviewing submitted papers.-->
+<!--					<br><br>-->
+<!--					<div class="row">-->
+<!--						<div class="col-md-3">-->
+<!--						<ul>-->
+<!--							<li> Andrea Bajcsy-->
+<!--							</li><li> Arjun Sripathy-->
+<!--							</li><li> Daniel Brown-->
+<!--							</li><li> Eoin Kenny-->
+<!--						</ul>-->
+<!--						</div>-->
+<!--						<div class="col-md-3">-->
+<!--						<ul>-->
+<!--							</li><li> Erdem Biyik-->
+<!--							</li><li> Felix Wang-->
+<!--							</li><li> Jerry He-->
+<!--							</li><li> Megha Srivastava-->
+
+
+<!--							</li>-->
+<!--						</ul>-->
+<!--						</div>-->
+<!--						<div class="col-md-3">-->
+<!--						<ul>-->
+<!--							</li><li> Micah Carroll-->
+<!--							</li><li> Minae Kwon-->
+<!--							</li><li> Nick Walker-->
+<!--							</li><li> Rohin Shah-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--						</div>-->
+<!--						<div class="col-md-3">-->
+<!--						<ul>-->
+<!--							</li><li> Serena Booth-->
+<!--							</li><li> Xavier Puig-->
+<!--							</li><li> Xuning Yang-->
+<!--							</li><li> Yuchen Cui-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+	<hr class="half-rule"/>
+	<section id="organizers">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+
+		<span class=titlesec>Organizers</span><br>
+		<div class="row">
+
+			<a href='https://asaran.github.io/'>
+		    <div class="profpic xlarge-1 columns">
+			    <img src=../images/organizers/akanksha.jpeg class="figure-img img-fluid ">
+			<p class=profname><a href="https://asaran.github.io/"> Akanksha Saran </a> </p>
+			<p class=institution> Microsoft Research </p>
+		    </div>
+			</a>
+
+			<a href='https://andipeng.com/'>
+		    <div class="profpic xlarge-1 columns">
+			    <img src=../images/organizers/andi.jpeg class="figure-img img-fluid ">
+			<p class=profname><a href="https://andipeng.com/"> Andi Peng </a></p>
+			<p class=institution>Massachusetts Institute of Technology</p>
+		    </div>
+			</a>
+
+			<a href='https://people.eecs.berkeley.edu/~abobu/'>
+		    <div class="profpic xlarge-1 columns">
+			<img  src=../images/organizers/andreea.jpg class="figure-img img-fluid ">
+			<p class=profname>  <a href="https://people.eecs.berkeley.edu/~abobu/"> Andreea Bobu </a> </p>
+			<p class=institution> University of California Berkeley </p>
+		    </div>
+			</a>
+
+		<a href='https://tengyangxie.github.io/'>
+		    <div class="profpic xlarge-1 columns">
+			<img  src=../images/organizers/tengyang.jpeg class="figure-img img-fluid ">
+			<p class=profname>  <a href="https://tengyangxie.github.io/"> Tengyang Xie </a> </p>
+			<p class=institution> University of Illinois at Urbana-Champaign </p>
+		    </div>
+			</a>
+
+
+		</div>
+		<div class="row">
+
+			<a href='http://people.eecs.berkeley.edu/~anca/'>
+		    <div class="profpic xlarge-1 columns">
+			    <img  src='../images/organizers/anca.jpeg' class="figure-img img-fluid ">
+			<p class="profname"> <a href="http://people.eecs.berkeley.edu/~anca/"> Anca Dragan </a></p>
+			<p class=institution> University of California Berkeley</p>
+		    </div>
+			</a>
+
+			<a href='http://www.pyoudeyer.com/'>
+		    <div class="profpic xlarge-1 columns">
+			    <img  src='../images/organizers/pierre-yves.jpeg' class="figure-img img-fluid ">
+			<p class="profname"> <a href="http://www.pyoudeyer.com/"> Pierre-Yves Oduyer </a></p>
+			<p class=institution> Institut national de recherche en sciences et technologies du numérique (INRIA)</p>
+		    </div>
+			</a>
+
+			<a href='https://hunch.net/~jl/'>
+		    <div class="profpic xlarge-1 columns">
+			    <img  src='../images/organizers/john.jpeg' class="figure-img img-fluid ">
+			<p class="profname"> <a href="https://hunch.net/~jl/"> John Langford </a></p>
+			<p class=institution> Microsoft Research </p>
+		    </div>
+			</a>
+
+		</div>
+
+
+		</div>
+</div>
+
+	</section>
+
+	<br>
+	<hr class="half-rule"/>
+	<section id="contact">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-10 mx-auto">
+		<span class=titlesec>Contact</span><br>
+		Reach out to <a href="mailto:interactive.implicit.learning@gmail.com">interactive.implicit.learning@gmail.com</a> for any questions.
+	    </div>
+		</div>
+		</div>
+	</section>
+
+
+<!--	<hr class="half-rule"/>-->
+<!--	<section id="sponsors">-->
+<!--	    <div class="container">-->
+<!--		<div class="row">-->
+<!--		    <div class="col-md-10 mx-auto">-->
+<!--		<span class=titlesec>Sponsors</span><br>-->
+<!--				<img  src=../images/sponsors/nvidia.png style="width:400px;height:220px;">-->
+<!--	    </div>-->
+<!--		</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+	<!-- Footer -->
+
+
+	<!-- Bootstrap core JavaScript -->
+<!-- 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> --> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js
+
+
+
+"> </script>
+
+	<!-- Custom JavaScript for this theme -->
+	<script src="js/scrolling-nav.js"></script>
+
+    </body>
+
+
+</html>
