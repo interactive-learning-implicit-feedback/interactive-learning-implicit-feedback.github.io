@@ -145,6 +145,13 @@ section.smaller {
   height: 60px;
 }
 
+.profpic .role {
+  text-align: center;
+  font-size: 15px;
+  height: 60px;
+  color: #ff8c00;
+}
+
 .paperlink img:hover {
   background-color: transparent;
   border-color: #009688;
