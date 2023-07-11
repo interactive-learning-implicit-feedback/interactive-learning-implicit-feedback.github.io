@@ -366,11 +366,24 @@
 				</tr>
 
 				<tr>
-					<td style="width: 21%">	09:10 am - 09:35 am        <td/><td>    Dorsa Sadigh <br> <b> TBD </b></td>
+					<td style="width: 21%">	09:10 am - 09:35 am        <td/><td>    Dorsa Sadigh <br> <b> TBD </b>
+
+					</td>
 				</tr>
 
 				<tr>
-					<td style="width: 21%">	09:35 am - 10:00 am        <td/><td>    Invited Speaker 2 <br> <b> TBD </b></td>
+					<td style="width: 21%">	09:35 am - 10:00 am        <td/><td>    Jesse Thomason <br> <b> Considering The Role of Language in Embodied Systems </b>
+						<br>
+ 						<a data-toggle="collapse" data-target="#abstractjesse" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractjesse" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Pretrained language models (PTLM) are "all the rage" right now.
+							From the perspective of folks who have been working at the intersection of language, vision, and robotics since before it was cool, the noticeable impact is that researchers outside NLP feel like they should plug language into their work.
+							However, these models are exclusively trained on text data, usually only for next word prediction, and potentially for next word prediction but under a fine-tuned words-as-actions policy with thousands of underpaid human annotators in the loop (e.g., RLHF).
+							Even when a PTLM is "multimodal" that usually means "training also involved images and their captions, which describe the literal content of the image."
+							What meaning can we hope to extract from those kinds of models in the context of embodied, interactive systems?
+							In this talk, I'll cover some applications our lab has worked through in the space language and embodied systems with a broader lens towards open questions about the limits and (in)appropriate applications of current PTLMs with those systems.
+						</div>
+					</td>
 				</tr>
 
 				<tr>
@@ -378,7 +391,19 @@
 				</tr>
 
 				<tr>
-					<td style="width: 21%">	10:30 am - 11:20 am        <td/><td>  Invited Speakers 3-4 <br> <b> TBD </b> </td>
+					<td style="width: 21%">	10:30 am - 10:55 am        <td/><td>  Jonathan Grizou <br> <b> TBD </b>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	10:55 am - 11:20 am        <td/><td>  Daniel Brown <br> <b> Pitfalls and paths forward when learning rewards from human feedback </b>
+						<br>
+ 						<a data-toggle="collapse" data-target="#abstractdaniel" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractdaniel" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Human feedback is often incomplete, suboptimal, biased, and ambiguous, leading to misidentification of the human's true reward function and suboptimal agent behavior.
+							I will discuss these pitfalls as well as some of our recent work that seeks to overcome these problems via techniques that calibrate to user biases, learn from multiple feedback types, use human feedback to align robot feature representations, and enable interpretable reward learning.
+						</div>
+					</td>
 				</tr>
 
 				<tr>
@@ -392,7 +417,50 @@
 				</tr>
 
 				<tr>
-					<td style="width: 21%">	01:10 pm - 02:25 pm        <td/><td>    Invited Speakers 5-7 <br> <b> TBD </b>  </td>
+					<td style="width: 21%">	01:10 pm - 01:35 pm        <td/><td>    Bradley Knox <br> <b> The EMPATHIC Framework for Task Learning from Implicit Human Feedback </b>
+					<br>
+ 						<a data-toggle="collapse" data-target="#abstractbrad" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractbrad" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Reactions such as gestures, facial expressions, and vocalizations are an abundant, naturally occurring channel of information that humans provide during interactions.
+							A robot or other agent could leverage an understanding of such implicit human feedback to improve its task performance at no cost to the human.
+							This approach contrasts with common agent teaching methods based on demonstrations, critiques, or other guidance that need to be attentively and intentionally provided.
+
+							In this talk, we first define the general problem of learning from implicit human feedback and then propose to address this problem through a novel data-driven framework, EMPATHIC.
+							This two-stage method consists of (1) mapping implicit human feedback to relevant task statistics such as rewards, optimality, and advantage; and (2) using such a mapping to learn a task.
+							We instantiate the first stage and three second-stage evaluations of the learned mapping.
+							To do so, we collect a dataset of human facial reactions while participants observe an agent execute a sub-optimal policy for a prescribed training task.
+							We train a deep neural network on this data and demonstrate its ability to (1) infer relative reward ranking of events in the training task from prerecorded human facial reactions; (2) improve the policy of an agent in the training task using live human facial reactions; and (3) transfer to a novel domain in which it evaluates robot manipulation trajectories.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	01:35 pm - 02:00 pm        <td/><td>    David Abel <br> <b> Three Dogmas of Reinforcement Learning </b>
+					<br>
+ 						<a data-toggle="collapse" data-target="#abstractdavid" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractdavid" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Modern reinforcement learning has been in large part shaped by three dogmas.
+							The first is our implicit treatment of learning as finding a solution, rather than endless adaptation.
+							The second is what I call the environment spotlight, which refers to our focus on environments rather than agents.
+							The last is the reward hypothesis, which states that all goals and purposes can be well thought of as maximization of a reward signal.
+							In this talk I discuss how these dogmas have shaped our views on learning.
+							I argue that, when agents learn from human feedback, we ought to dispense entirely with the first two dogmas, while we must recognize and embrace the nuance implicit in the third.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width: 21%">	02:00 pm - 02:25 pm        <td/><td>    Paul Mineiro <br> <b> Contextual Bandits without Rewards </b>
+					<br>
+ 						<a data-toggle="collapse" data-target="#abstractpaul" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractpaul" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Contextual bandits are highly practical, but the need to specify a scalar reward limits their adoption.
+							This motivates study of contextual bandits where a latent reward must be inferred from post-decision observables, aka Interactive Grounded Learning.
+							An information theoretic argument indicates the need for additional assumptions to succeed, and I review some sufficient conditions from the recent literature.
+							I conclude with speculation about composing IGL with active learning.
+						</div>
+					</td>
+					</td>
 				</tr>
 
 				<tr>
@@ -404,7 +472,19 @@
 				</tr>
 
 				<tr>
-					<td style="width: 21%">	03:30 pm - 04:00 pm        <td/><td>    Invited Speaker 8 <br> <b> TBD </b>  </td>
+					<td style="width: 21%">	03:30 pm - 04:00 pm        <td/><td>    Taylor Kessler Faulkner <br> <b> Robots Learning from Real People </b>
+					<br>
+ 						<a data-toggle="collapse" data-target="#abstractbrad" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+						<div id="abstractbrad" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
+							Robots deployed in the wild can improve their performance by using input from human teachers.
+							Furthermore, both robots and humans can benefit when robots adapt to and learn from the people around them.
+							However, real people can act in imperfect ways, and can often be unable to provide input in large quantities.
+							In this talk, I will address some of the past research I have conducted toward addressing these issues, which has focused on creating learning algorithms that can learn from imperfect teachers.
+							I will also talk about my current work on the Robot-Assisted Feeding project in the Personal Robotics Lab at the University of Washington, which I am approaching through a similar lens of working with real teachers and possibly imperfect information.
+						</div>
+					</td>
+					</td>
+					</td>
 				</tr>
 
 				<tr>
