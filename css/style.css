@@ -98,21 +98,21 @@ section.smaller {
 	/*min-width: 14%;*/
 	margin: auto;
 	padding-bottom: 10px;
-	width: 250px;
+	width: 210px;
 }
 
 .profpic {
 	/*min-width: 14%;*/
 	margin: auto;
 	padding-bottom: 10px;
-	width: 190px;
+	width: 250px;
 }
 
 .profpic img {
 	width: 130px;
 	height: 130px;
-	  display: block;
-	  margin: auto;
+    display: block;
+    margin: auto;
 	object-fit: cover;
 }
 
