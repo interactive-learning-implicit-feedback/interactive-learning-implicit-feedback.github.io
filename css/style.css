@@ -98,14 +98,14 @@ section.smaller {
 	/*min-width: 14%;*/
 	margin: auto;
 	padding-bottom: 10px;
-	width: 210px;
+	width: 240px;
 }
 
 .profpic {
 	/*min-width: 14%;*/
 	margin: auto;
 	padding-bottom: 10px;
-	width: 250px;
+	width: 240px;
 }
 
 .profpic img {
@@ -132,8 +132,8 @@ section.smaller {
   margin-top: 15px;
   margin-bottom: 5px;
   color: black;
-
 }
+
 .profpic .profname a {
 	color: black;
 }
