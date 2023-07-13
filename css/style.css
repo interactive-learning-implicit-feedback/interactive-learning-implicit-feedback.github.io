@@ -98,8 +98,7 @@ section.smaller {
 	/*min-width: 14%;*/
 	margin: auto;
 	padding-bottom: 10px;
-	width: 220px;
-
+	width: 250px;
 }
 
 .profpic {
@@ -107,7 +106,6 @@ section.smaller {
 	margin: auto;
 	padding-bottom: 10px;
 	width: 190px;
-
 }
 
 .profpic img {
